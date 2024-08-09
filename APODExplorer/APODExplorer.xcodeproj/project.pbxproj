@@ -16,6 +16,10 @@
 		84B66A452C6666D100F7588B /* APODExplorerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B66A442C6666D100F7588B /* APODExplorerTests.swift */; };
 		84B66A4F2C6666D100F7588B /* APODExplorerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B66A4E2C6666D100F7588B /* APODExplorerUITests.swift */; };
 		84B66A512C6666D100F7588B /* APODExplorerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B66A502C6666D100F7588B /* APODExplorerUITestsLaunchTests.swift */; };
+		84B66A5E2C66722E00F7588B /* APODService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B66A5D2C66722E00F7588B /* APODService.swift */; };
+		84B66A602C66728E00F7588B /* APOD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B66A5F2C66728E00F7588B /* APOD.swift */; };
+		84B66A642C66748E00F7588B /* APODViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B66A632C66748E00F7588B /* APODViewModel.swift */; };
+		84B66A682C668EE500F7588B /* APODServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B66A672C668EE500F7588B /* APODServiceProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		84B66A4A2C6666D100F7588B /* APODExplorerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APODExplorerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B66A4E2C6666D100F7588B /* APODExplorerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODExplorerUITests.swift; sourceTree = "<group>"; };
 		84B66A502C6666D100F7588B /* APODExplorerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODExplorerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		84B66A5D2C66722E00F7588B /* APODService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODService.swift; sourceTree = "<group>"; };
+		84B66A5F2C66728E00F7588B /* APOD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APOD.swift; sourceTree = "<group>"; };
+		84B66A632C66748E00F7588B /* APODViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODViewModel.swift; sourceTree = "<group>"; };
+		84B66A672C668EE500F7588B /* APODServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODServiceProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +109,11 @@
 			children = (
 				84B66A2D2C6666CE00F7588B /* AppDelegate.swift */,
 				84B66A2F2C6666CE00F7588B /* SceneDelegate.swift */,
-				84B66A312C6666CE00F7588B /* ViewController.swift */,
+				84B66A662C668EAF00F7588B /* Protocol */,
+				84B66A612C66740300F7588B /* Networking */,
+				84B66A622C66743000F7588B /* Model */,
+				84B66A692C668F0E00F7588B /* View */,
+				84B66A652C66756300F7588B /* ViewModel */,
 				84B66A332C6666CE00F7588B /* Main.storyboard */,
 				84B66A362C6666D100F7588B /* Assets.xcassets */,
 				84B66A382C6666D100F7588B /* LaunchScreen.storyboard */,
@@ -125,6 +137,46 @@
 				84B66A502C6666D100F7588B /* APODExplorerUITestsLaunchTests.swift */,
 			);
 			path = APODExplorerUITests;
+			sourceTree = "<group>";
+		};
+		84B66A612C66740300F7588B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				84B66A5D2C66722E00F7588B /* APODService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		84B66A622C66743000F7588B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84B66A5F2C66728E00F7588B /* APOD.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84B66A652C66756300F7588B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				84B66A632C66748E00F7588B /* APODViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		84B66A662C668EAF00F7588B /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				84B66A672C668EE500F7588B /* APODServiceProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		84B66A692C668F0E00F7588B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84B66A312C6666CE00F7588B /* ViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +311,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				84B66A322C6666CE00F7588B /* ViewController.swift in Sources */,
+				84B66A5E2C66722E00F7588B /* APODService.swift in Sources */,
+				84B66A642C66748E00F7588B /* APODViewModel.swift in Sources */,
+				84B66A682C668EE500F7588B /* APODServiceProtocol.swift in Sources */,
 				84B66A2E2C6666CE00F7588B /* AppDelegate.swift in Sources */,
+				84B66A602C66728E00F7588B /* APOD.swift in Sources */,
 				84B66A302C6666CE00F7588B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
