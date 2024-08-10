@@ -20,6 +20,12 @@
 		84B66A602C66728E00F7588B /* APOD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B66A5F2C66728E00F7588B /* APOD.swift */; };
 		84B66A642C66748E00F7588B /* APODViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B66A632C66748E00F7588B /* APODViewModel.swift */; };
 		84B66A682C668EE500F7588B /* APODServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B66A672C668EE500F7588B /* APODServiceProtocol.swift */; };
+		84B66A6B2C66932E00F7588B /* APODStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B66A6A2C66932E00F7588B /* APODStorageService.swift */; };
+		84B66A6D2C66936300F7588B /* UserDefaultsAPODStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B66A6C2C66936300F7588B /* UserDefaultsAPODStorageService.swift */; };
+		84B66A6F2C6693BD00F7588B /* ImageLoadingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B66A6E2C6693BD00F7588B /* ImageLoadingService.swift */; };
+		84B66A712C6693ED00F7588B /* URLSessionImageLoadingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B66A702C6693ED00F7588B /* URLSessionImageLoadingService.swift */; };
+		84B66A732C66943200F7588B /* ErrorHandlingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B66A722C66943200F7588B /* ErrorHandlingService.swift */; };
+		84B66A752C66944E00F7588B /* AlertErrorHandlingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B66A742C66944E00F7588B /* AlertErrorHandlingService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +63,12 @@
 		84B66A5F2C66728E00F7588B /* APOD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APOD.swift; sourceTree = "<group>"; };
 		84B66A632C66748E00F7588B /* APODViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODViewModel.swift; sourceTree = "<group>"; };
 		84B66A672C668EE500F7588B /* APODServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODServiceProtocol.swift; sourceTree = "<group>"; };
+		84B66A6A2C66932E00F7588B /* APODStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODStorageService.swift; sourceTree = "<group>"; };
+		84B66A6C2C66936300F7588B /* UserDefaultsAPODStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsAPODStorageService.swift; sourceTree = "<group>"; };
+		84B66A6E2C6693BD00F7588B /* ImageLoadingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoadingService.swift; sourceTree = "<group>"; };
+		84B66A702C6693ED00F7588B /* URLSessionImageLoadingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionImageLoadingService.swift; sourceTree = "<group>"; };
+		84B66A722C66943200F7588B /* ErrorHandlingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandlingService.swift; sourceTree = "<group>"; };
+		84B66A742C66944E00F7588B /* AlertErrorHandlingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertErrorHandlingService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +121,7 @@
 			children = (
 				84B66A2D2C6666CE00F7588B /* AppDelegate.swift */,
 				84B66A2F2C6666CE00F7588B /* SceneDelegate.swift */,
+				84B66A762C671E6500F7588B /* Helper */,
 				84B66A662C668EAF00F7588B /* Protocol */,
 				84B66A612C66740300F7588B /* Networking */,
 				84B66A622C66743000F7588B /* Model */,
@@ -167,6 +180,9 @@
 			isa = PBXGroup;
 			children = (
 				84B66A672C668EE500F7588B /* APODServiceProtocol.swift */,
+				84B66A6A2C66932E00F7588B /* APODStorageService.swift */,
+				84B66A6E2C6693BD00F7588B /* ImageLoadingService.swift */,
+				84B66A722C66943200F7588B /* ErrorHandlingService.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -177,6 +193,16 @@
 				84B66A312C6666CE00F7588B /* ViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		84B66A762C671E6500F7588B /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				84B66A6C2C66936300F7588B /* UserDefaultsAPODStorageService.swift */,
+				84B66A702C6693ED00F7588B /* URLSessionImageLoadingService.swift */,
+				84B66A742C66944E00F7588B /* AlertErrorHandlingService.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,12 +337,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				84B66A322C6666CE00F7588B /* ViewController.swift in Sources */,
+				84B66A6D2C66936300F7588B /* UserDefaultsAPODStorageService.swift in Sources */,
 				84B66A5E2C66722E00F7588B /* APODService.swift in Sources */,
+				84B66A752C66944E00F7588B /* AlertErrorHandlingService.swift in Sources */,
 				84B66A642C66748E00F7588B /* APODViewModel.swift in Sources */,
 				84B66A682C668EE500F7588B /* APODServiceProtocol.swift in Sources */,
+				84B66A732C66943200F7588B /* ErrorHandlingService.swift in Sources */,
 				84B66A2E2C6666CE00F7588B /* AppDelegate.swift in Sources */,
+				84B66A6F2C6693BD00F7588B /* ImageLoadingService.swift in Sources */,
+				84B66A6B2C66932E00F7588B /* APODStorageService.swift in Sources */,
 				84B66A602C66728E00F7588B /* APOD.swift in Sources */,
 				84B66A302C6666CE00F7588B /* SceneDelegate.swift in Sources */,
+				84B66A712C6693ED00F7588B /* URLSessionImageLoadingService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
